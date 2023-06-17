@@ -16,3 +16,27 @@ code {
 input, select {
   outline: none;
 }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.app {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .app {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+      
+}
+

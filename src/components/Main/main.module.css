@@ -12,6 +12,46 @@
     border-radius: 12px 12px 0px 0px;
 }
 
+@media (max-width: 1024px) {
+
+    .wrInner {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 90vw;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    .form input {
+        align-self: flex-start;
+        font-size: large;
+    }
+
+    .telBlock input {
+        max-width: 300px;
+        min-height: 54px;
+    }
+
+    .emailBlock input {
+        max-width: 300px;
+        min-height: 54px;
+    }
+    
+    .submitBtn {
+        min-width: 99px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .emailBlock label {
+        margin-top: 20px;
+    }
+
+}
+
 .avatar {
     position: absolute;
     width: 80px;
@@ -26,7 +66,7 @@
     position: absolute;
     width: 53px;
     height: 52px;
-    left: calc(50% - 53px/2 + 0.5px);
+    left: calc(50% - 53px/2 - 1.5px);
     top: calc(50% - 52px/2);
     font-family: 'SB Sans Text Mono';
     font-style: normal;
@@ -98,7 +138,7 @@ a i {
 }
 
 .links p {
-    width: 52px;
+    width: auto;
     height: 16px;
     font-family: 'SB Sans Interface';
     font-style: normal;

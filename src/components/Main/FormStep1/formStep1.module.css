@@ -1,7 +1,3 @@
-.wr {
-    position: relative;
-}
-
 .wrInner {
     position: absolute;
     width: 900px;
@@ -27,40 +23,12 @@
     border-radius: 8px;
 }
 
-.stepper {
-    position: absolute;
-    width: 680px;
-    height: 48px;
-    left: calc(50% - 680px/2);
-    top: 62px;
-}
-
-.steps {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 34px;
-    position: absolute;
-    height: 48px;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    
-}
-
-.atoms1 {
-    width: 58px;
-    height: 48px;
-}
-
 .dotActive {
     position: absolute;
     width: 16px;
     height: 16px;
     left: 0px;
-    top: 0px;
+    top: -50%;
     background: #5558FA;
     border-radius: 100px;
     display: flex;
@@ -81,7 +49,7 @@
     width: 16px;
     height: 16px;
     left: calc(50% - 16px/2);
-    top: 0px;
+    top: -50%;
     background: #A6A6A6;
     border-radius: 100px;
 }
@@ -91,7 +59,7 @@
     width: 16px;
     height: 16px;
     right: 0px;
-    top: 0px;
+    top: -50%;
     background: #A6A6A6;
     border-radius: 100px;
 }
@@ -343,7 +311,7 @@ nav svg {
     width: 9px;
     height: 20px;
     left: 0px;
-    top: 28px;
+    top: 26px;
     font-family: 'SB Sans Interface';
     font-style: normal;
     font-weight: 600;
@@ -357,7 +325,7 @@ nav svg {
     width: 9px;
     height: 20px;
     left: calc(50% - 9px/2);
-    top: 28px;
+    top: 26px;
     font-family: 'SB Sans Interface';
     font-style: normal;
     font-weight: 400;
@@ -372,7 +340,7 @@ nav svg {
     width: 9px;
     height: 20px;
     right: 0px;
-    top: 28px;
+    top: 26px;
     font-family: 'SB Sans Interface';
     font-style: normal;
     font-weight: 400;
@@ -380,4 +348,167 @@ nav svg {
     line-height: 20px;
     text-align: right;
     color: #666666;
+}
+
+@media (max-width: 1024px) {
+
+    .wrInner {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 90vw;
+        height: 770px;
+    }
+
+    .submitBtn {
+        left: 419px;
+        top: 520px;
+        min-width: 99px;
+        font-size: 17px;
+    }
+
+    .form input {
+        font-size: 18px;
+    }
+
+    .form select {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .error {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    .wrInner {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 90vw;
+        height: 95vh;
+    }
+
+    .form {
+        left: 7%;
+    }
+
+    .form input {
+        font-size: large;
+    }
+ 
+    .submitBtn {
+        min-width: 99px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .submitBtn {
+        left: 200px;
+        top: 490px;
+    }
+    
+    .backBtn {
+        left: 25px;
+        top: 687px;
+    }
+
+    .horizontalLine {
+        left: 18px;
+        right: 18px;
+        top: 66px;
+    }
+    
+    .stepsNumber1 {
+        font-size: 16px;
+    }
+
+    .stepsNumber2 {
+        font-size: 16px;
+    }
+
+    .stepsNumber3 {
+        font-size: 16px;
+    }
+
+    .form select {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    /* body {
+        height: 90vh;
+    } */
+
+    .wrInner {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form {
+        left: 8%;
+        gap: 8px;
+        height: 456px;
+        top: 110px;
+    }
+
+    .form input {
+        font-size: medium;
+        padding: 8px;
+    }
+ 
+    .submitBtn {
+        min-width: 99px;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    .submitBtn {
+        left: 200px;
+        top: 450px;
+    }
+    
+    .backBtn {
+        left: 30px;
+        top: 563px;
+    }
+
+    .horizontalLine {
+        left: 18px;
+        right: 18px;
+        top: 36px;
+    }
+    
+    .stepsNumber1 {
+        font-size: 16px;
+    }
+
+    .stepsNumber2 {
+        font-size: 16px;
+    }
+
+    .stepsNumber3 {
+        font-size: 16px;
+    }
+
+    .form select {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
 }

@@ -113,42 +113,28 @@ export function FormStep3() {
   }
 
   return (
-    <main className={styles.wr}>
+    <>
       <div className={styles.wrInner}>
         <div className={styles.horizontalLine}>
           <div className={styles.progressLine} />
-        </div>
-        <div className={styles.stepper}>
-          <div className={styles.steps}>
-
-            <div className={styles.atoms1}>
-              <div className={styles.dotActive1}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check" viewBox="0 0 16 16">
-                  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                </svg>
-              </div>
-              <div className={styles.stepsNumber1}>1</div>
-            </div>
-
-            <div className={styles.atoms1}>
-              <div className={styles.dotActive2}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check" viewBox="0 0 16 16">
-                  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                </svg>
-              </div>
-              <div className={styles.stepsNumber2}>2</div>
-            </div>
-
-            <div className={styles.atoms1}>
-              <div className={styles.dotActive3}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dot" viewBox="0 0 16 16">
-                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                </svg>
-              </div>
-              <div className={styles.stepsNumber3}>3</div>
-            </div>
-
+          <div className={styles.dotActive1}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+            </svg>
           </div>
+          <div className={styles.dotActive2}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+            </svg>
+          </div>
+          <div className={styles.dotActive3}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dot" viewBox="0 0 16 16">
+              <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+            </svg>
+          </div>
+          <div className={styles.stepsNumber1}>1</div>
+          <div className={styles.stepsNumber2}>2</div>
+          <div className={styles.stepsNumber3}>3</div>
         </div>
         <Formik
           initialValues={initialValuesSS}
@@ -216,6 +202,6 @@ export function FormStep3() {
           closeErrorModalHandler={closeErrorModalHandler}
         />
       </Modal>
-    </main>
+    </>
   )
 }

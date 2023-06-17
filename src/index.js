@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-])
+], { basename: '/CloudCamp-test-form' })
 
 // ,{ basename: '/CloudCamp-test-form' }
 
