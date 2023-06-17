@@ -1,0 +1,124 @@
+.modalHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 396px;
+    height: 28px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.modalHeader p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 344px;
+    height: 26px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #333333;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.closeXBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    gap: 8px;
+    width: 28px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 100px;
+    border: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.closeXBtn:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.contentWr {
+    position: absolute;
+    width: 396px;
+    height: 132px;
+    left: calc(50% - 396px/2);
+    top: calc(50% - 132px/2 - 8.5px);
+    order: 1;
+    background: #FFFFFF;
+}
+
+.iconDecor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: calc(50% - 80px/2);
+    top: calc(50% - 80px/2);
+    background: rgba(232, 78, 88, 0.15);
+    border-radius: 100px;
+}
+
+.btnWr {
+    position: absolute;
+    bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    width: 396px;
+    height: 44px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.btnWr button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    width: 88px;
+    height: 44px;
+    background: #5558FA;
+    border-radius: 4px;
+    border: none;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: white;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}

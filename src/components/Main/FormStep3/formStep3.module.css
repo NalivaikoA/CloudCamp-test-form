@@ -1,0 +1,332 @@
+.wr {
+    position: relative;
+}
+
+.wrInner {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    left: calc(50% - 900px/2);
+    top: 24px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.horizontalLine {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    position: absolute;
+    height: 8px;
+    left: 110px;
+    right: 110px;
+    top: 66px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+.progressLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 140px;
+    width: 670px;
+    height: 8px;
+    background: #5558FA;
+    border-radius: 8px;
+}
+
+.stepper {
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    left: calc(50% - 680px/2);
+    top: 62px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 34px;
+    position: absolute;
+    height: 48px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    
+}
+
+.atoms1 {
+    width: 58px;
+    height: 48px;
+}
+
+.dotActive1 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0px;
+    top: 0px;
+    background: #5558FA;
+    border-radius: 100px;
+}
+
+.dotActive2 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: calc(50% - 16px/2);
+    top: 0px;
+    background: #5558FA;
+    border-radius: 100px;
+}
+
+.dotActive3 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 0px; 
+    background: #5558FA;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.dotActive1 svg {
+    position: absolute;
+    background: transparent;
+    border-radius: 0.5px;
+    color: white;
+}
+
+.dotActive2 svg {
+    position: absolute;
+    background: transparent;
+    color: white;
+}
+
+.dotActive3 svg {
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    color: white;
+    background-color: transparent;
+}
+
+.dot1 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: calc(50% - 16px/2);
+    top: 0px;
+    background: #A6A6A6;
+    border-radius: 100px;
+}
+
+.dot2 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 0px;
+    top: 0px;
+    background: #A6A6A6;
+    border-radius: 100px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 336px;
+    height: 436px;
+    left: 110px;
+    top: 176px;
+}
+
+.aboutBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 680px;
+    height: 136px;
+    position: relative;
+}
+
+.counter {
+    position: absolute;
+    bottom: 17%;
+    right: 3%;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+  }
+
+.aboutBlock label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 20px;
+    width: 680px;
+    height: 20px;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    color: #333333;
+}
+
+.aboutBlock textarea {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px 12px 12px 5px;
+    gap: 12px;  
+    width: 680px;
+    height: 84px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    z-index: 1;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    outline: none;
+    overflow: hidden;
+}
+
+textarea::placeholder {
+    width: 656px;
+    height: 20px;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.48);
+    padding-left: 10px;
+  }
+
+.submitBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    position: absolute;
+    width: 103px;
+    height: 44px;
+    left: 578px;
+    top: 200px;
+    background: #5558FA;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.backBtn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 8px;
+    position: absolute;
+    width: 73px;
+    height: 44px;
+    left: 110px;
+    top: 376px;
+    border: 1.5px solid #5558FA;
+    border-radius: 4px;
+    color: #5558FA;
+    background-color: white;
+}
+
+nav svg {
+    margin-right: 5.6px;
+}
+
+.error {
+    width: 300px;
+    height: 16px;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.48);
+}
+
+.stepsNumber1 {
+    position: absolute;
+    width: 9px;
+    height: 20px;
+    left: 0px;
+    top: 28px;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5558FA;
+}
+
+.stepsNumber2 {
+    position: absolute;
+    width: 9px;
+    height: 20px;
+    left: calc(50% - 9px/2);
+    top: 28px;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #5558FA;
+}
+
+.stepsNumber3 {
+    position: absolute;
+    width: 9px;
+    height: 20px;
+    right: 0px;
+    top: 28px;
+    font-family: 'SB Sans Interface';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    color: #5558FA;
+}
+
+
