@@ -12,46 +12,6 @@
     border-radius: 12px 12px 0px 0px;
 }
 
-@media (max-width: 1024px) {
-
-    .wrInner {
-        position: relative;
-        left: 0;
-        top: 0;
-        width: 90vw;
-    }
-
-}
-
-@media (max-width: 720px) {
-
-    .form input {
-        align-self: flex-start;
-        font-size: large;
-    }
-
-    .telBlock input {
-        max-width: 300px;
-        min-height: 54px;
-    }
-
-    .emailBlock input {
-        max-width: 300px;
-        min-height: 54px;
-    }
-    
-    .submitBtn {
-        min-width: 99px;
-        font-size: 16px;
-        margin-top: 20px;
-    }
-
-    .emailBlock label {
-        margin-top: 20px;
-    }
-
-}
-
 .avatar {
     position: absolute;
     width: 80px;
@@ -99,7 +59,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    width: 124px;
+    width: auto;
     height: 26px;
 }
 
@@ -296,4 +256,65 @@ nav svg {
     align-items: center;
     align-self: start;
     color: rgba(0, 0, 0, 0.48);
+}
+
+
+@media (max-width: 1024px) {
+
+    .wrInner {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 90vw;
+    }
+
+    .border {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        position: absolute;
+        left: calc(50% - 80vw/2);
+        top: 129px;
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    .form input {
+        align-self: flex-start;
+        font-size: large;
+    }
+
+    .telBlock input {
+        max-width: 300px;
+        min-height: 54px;
+    }
+
+    .emailBlock input {
+        max-width: 300px;
+        min-height: 54px;
+    }
+    
+    .submitBtn {
+        min-width: 99px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .emailBlock label {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .blockA {
+        position: absolute;
+        left: 116px;
+        }
+
 }

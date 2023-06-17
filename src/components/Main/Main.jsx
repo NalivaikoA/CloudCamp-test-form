@@ -57,11 +57,11 @@ export function Main() {
   return (
     <div className={styles.wrInner}>
       <div className={styles.avatar}>
-        <p>АИ</p>
+        <p>АН</p>
       </div>
       <div className={styles.blockA}>
         <div className={styles.fio}>
-          <h3>Иван Иванов</h3>
+          <h3>Алексей Наливайко</h3>
         </div>
         <nav className={styles.links}>
           <a href="#">
