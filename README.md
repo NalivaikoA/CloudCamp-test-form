@@ -6,10 +6,10 @@
 
 [Ссылка на макет](https://www.figma.com/file/rzIp6awR6dGFVrcxcCEwzD/FrontCloudCamp?type=design&node-id=39-29554&t=yZOyF3gia0a2ky5r-0)
 
-# Посмотреть мою реализацию
+### Посмотреть мою реализацию
 https://nalivaikoa.github.io/CloudCamp-test-form/
 
-# Запуск проекта
+### Запуск проекта
 
 Клонируем репозиторий:
 `git clone https://github.com/Axent13/frontcloudcamp-test-task.git`
